@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hey! MyGirl</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            font-family: Corbel, sans-serif;
+            background-color: #f7d5e3;
+            text-align: center;
+            margin: 0;
+        }
+        #intro, #askOutContainer, .player-container, #slideshow {
+            display: none;
+        }
+        #intro img {
+            width: 400px;
+            height: auto;
+            border-radius: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #000000;
+            border: groove;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #f31d2f;
+        }
+
+        button2 {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #000000;
+            border: groove;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button2:hover {
+            background-color: #22000300;
+        }
+
+        button1 {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: rgb(0, 0, 0);
+            
+            border: none;
+            border-radius: 3px;
+            cursor: none;
+        }
+        button1:hover {
+            background-color: #f31d2f;
+        }
+        
+        .player-container {
+            padding: 60px;
+            border-radius: 3px;
+            color: #000000;
+            max-width: 300px;
+            text-align: top;
+            margin-top: 25px;
+        }
+        #slideshow img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        h2 {
+            text-align: top;    
+            font-size: 1.5em;
+            color: rgb(173, 29, 29);
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- หน้าแรก แสดงภาพและปุ่มขอเป็นแฟน -->
+    <div id="intro">
+        <img src="fisttime1.jpg" alt="First_img">
+        <br><br>
+        <h0 id="message">Pasta Ama : First Date</h0>
+        <br><br>
+        <h0 id="message">เซนต์มีอะไรจะถามมิ้ว...</h0>
+        <br><br>
+        <h0 id="message">ถ้าไม่พร้อมตอบตอนนี้ รีบปัดทิ้งได้เลยนะคะ</h0>
+        <br><br>
+        <button onclick="goToAskOut()">แต่ถ้าพร้อมก็.. คลิ๊ก!</button>
+    </div>
+
+    <!-- หน้า 2 -->
+    <div id="Nextstep">
+        <h1 id="message">พร้อมแล้วจริงๆ หรอออออ</h1>
+        <button onclick="Confirm_1()">?????</button>
+    </div>
+
+    <!-- หน้าขอเป็นแฟน -->
+    <div id="askOutContainer">
+        <br><br>
+        <h1 id="message">'งั้น...' ??</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">🐶🐶🐶🐶🐶🐶🐶🐶🐶🐶</h1>
+        <br><br>
+        <br><br>
+        <h1 id="message">🐶🐶🐶🐶🐶🐶🐶🐶🐶🐶</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">🐶🐶🐶🐶🐶🐶🐶🐶🐶🐶</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">.</h1><br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">.</h1>
+        <br><br>
+        <h1 id="message">คือ... </h1>
+        <h1 id="message">เราลองมาเป็นแฟนกันดีไหมคะ ??</h1>
+        <h1 id="message">😳😳😳😳😳😳😳😳😳😳</h1>
+        <button onclick="askOut()">say yes = ตกลง</button>
+    </div>
+    
+    <!-- Music Player Container -->
+    <div class="player-container" id="musicPlayerContainer">
+        <div class="song-title" id="songTitle">Song 1</div>
+        <audio id="audioPlayer">
+            <source src="songsong.mp3" type="audio/mpeg">
+        </audio>
+        <button1 onclick="playPause()">▶️</button1>
+        <button1 onclick="nextSong()">⏭</button1>
+    </div>
+
+    <!-- Image Slideshow with Buttons -->
+    <div id="slideshow">
+        <button1 onclick="prevSlide()">       </button1>
+        <img id="slideImage" src="fisttime2.jpg" alt="สไลด์รูปภาพ">
+        <button1 onclick="nextSlide()">       </button1>
+    </div>
+
+    <div id="Complete">
+        <h2 id="message">ตอนนี้... มิ้วเป็นแฟนเซนต์แล้วนะคะ!!</h2>
+    </div>
+
+    <script>
+        // อาเรย์ของเพลงและรูปภาพ
+        const songs = [
+            { title: " ", src: "songsong.mp3"},
+            { title: " ", src: "LostJigsawcut.mp3"},
+            { title: " ", src: "StoryandFeelcut.mp3"}
+        ];
+
+        const images = ["date1.jpg", "date2.jpg", "fisttime4.jpg", "date3.jpg", "date4.jpg", "fisttime1.jpg", "date5.jpg", "date6.jpg", "date7.jpg", "fisttime4.jpg", "date8.jpg", "date9.jpg", "date10.jpg", "fisttime6.jpg", "1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"];
+        
+        let currentSongIndex = 0;
+        let currentIndex = 0;
+        const audioPlayer = document.getElementById("audioPlayer");
+        const songTitle = document.getElementById("songTitle");
+
+        // ฟังก์ชันเปลี่ยนหน้าแรกไปยังหน้าขอเป็นแฟน
+        function goToAskOut() {
+            document.getElementById("intro").style.display = "none";
+            document.getElementById("Nextstep").style.display = "block";
+        }
+
+        function Confirm_1() {
+            document.getElementById("Nextstep").style.display = "none";
+            document.getElementById("askOutContainer").style.display = "block";
+        }
+
+        // ฟังก์ชันโหลดเพลงและเล่นเพลง
+        function loadSong(index) {
+            audioPlayer.src = songs[index].src;
+            songTitle.textContent = songs[index].title;
+        }
+
+        function playPause() {
+            if (audioPlayer.paused) {
+                audioPlayer.play();
+            } else {
+                audioPlayer.pause();
+            }
+        }
+
+        function nextSong() {
+            currentSongIndex = (currentSongIndex + 1) % songs.length;
+            loadSong(currentSongIndex);
+            audioPlayer.play();
+        }
+
+        // ฟังก์ชันแสดงและเลื่อนสไลด์รูปภาพ
+        function showSlide() {
+            const slideImage = document.getElementById("slideImage");
+            slideImage.src = images[currentIndex];
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % images.length;
+            showSlide();
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            showSlide();
+        }
+
+        // ฟังก์ชันแสดง Music Player และสไลด์เมื่อกดตกลง
+        function askOut() {
+            
+            document.getElementById("Complete").style.display = "block";
+
+
+            let answer = confirm("Say Yes!! งั้นตอนนี้... เราเป็นแฟนกันแล้วนะคะหมาเด็ก");
+            if (answer) {
+                // เปลี่ยนข้อความ
+                document.getElementById("message").innerHTML = "เย้! เราเป็นแฟนกันแล้ว! 💕";
+                document.getElementById("askOutContainer").style.display = "none";
+
+                // แสดงข้อมความ
+
+                // แสดง Music Player และสไลด์โชว์
+                document.getElementById("musicPlayerContainer").style.display = "block";
+                document.getElementById("slideshow").style.display = "block";
+
+                // โหลดเพลง, เริ่มเล่นเพลง และแสดงรูปสไลด์แรก
+                loadSong(currentSongIndex);
+                audioPlayer.play();
+                showSlide();
+            } else {
+                document.getElementById("message").innerHTML = "ไม่เป็นไรนะ เราจะรอต่อไป 😢";
+            }
+        }
+
+
+        // แสดงหน้าแรก
+        document.getElementById("intro").style.display = "block";
+        document.getElementById("Nextstep").style.display = "none";
+        document.getElementById("askOutContainer").style.display = "none";
+        document.getElementById("Complete").style.display = "none";
+    </script>
+</body>
+</html>
